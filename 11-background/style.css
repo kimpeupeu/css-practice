@@ -1,0 +1,136 @@
+.like-button {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* ▼ WHERE YOUR CODE BEGINS */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #eee;
+}
+
+.card {
+  width: 840px;
+  background-color: white;
+  padding: 24px;
+  display: flex;
+}
+
+.card-image {
+  width: 300px;
+  height: 200px;
+  background-image: url("./assets/img-house.jpg");
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+  margin-right: 24px;
+  border-radius: 6px;
+}
+
+.like-button {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background-color: #fff;
+  background-image: url("./assets/icon-favorite.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.property-type {
+  color: #7d858f;
+}
+
+.plus-badge {
+  background-color: #92174d;
+  padding: 1px 8px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 8px;
+}
+
+.property-rate {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.property-rate strong {
+  font-size: 16px;
+  color: #151b26;
+  font-weight: 400;
+  margin-right: 1px;
+}
+
+.property-rate::before {
+  content: "";
+  background-image: url(./assets/icon-star.svg);
+  width: 16px;
+  height: 16px;
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+
+.property-rate span {
+  color: #7d858f;
+}
+
+.card-title {
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.card-detail {
+  display: flex;
+  flex-wrap: wrap;
+  color: #7d858f;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.card-detail div {
+  margin-bottom: 8px;
+}
+
+.property-detail dd span::after {
+  content: "·";
+  margin: 0 6px;
+}
+
+.sr-only {
+  position: absolute;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  visibility: hidden;
+}
