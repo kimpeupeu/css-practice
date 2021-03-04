@@ -126,6 +126,11 @@ body {
   margin: 0 6px;
 }
 
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0;
+}
+
 .sr-only {
   position: absolute;
   z-index: -1;
