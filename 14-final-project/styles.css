@@ -357,11 +357,11 @@ li {
   margin-bottom: 48px;
 }
 
-.curriculum-detail-item {
+.curriculum-detail {
   margin-bottom: 40px;
 }
 
-.curriculum-detail-item:last-child {
+.curriculum-detail:last-child {
   margin-bottom: 0;
 }
 
